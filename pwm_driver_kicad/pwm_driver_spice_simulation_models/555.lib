@@ -1,0 +1,82 @@
+* This model is for the old bipolar 555 supplied by National
+* Semi Lm555, it is essentially the data schematic entered
+* with some manipulation of the bipolar parameters to correct 
+* drive capability and timing. The max frequency of 100k as 
+* hinted at by Nat Semi is maintained but does conflict with 
+* the trigger propagation delay. It would seem that the real part
+* is capable of higher freqs. The high current transients with 
+* change of output are seen with this model.
+.subckt 555b 1 2 3 4 5 6 7 8
+  q_q2     18 31 32  qnpn555 
+  q_q1     18 6 31  qnpn555 
+  q_q4     17 5 30  qnpn555 
+  q_q3     17 30 32  qnpn555 
+  q_q5d    15 18 8  qpnp555 
+  q_q5     18 18 8  qpnp555 
+  q_q6d    16 17 8  qpnp555 
+  q_q6     17 17 8  qpnp555 
+  q_q11    19 9 20  qpnp555 
+  q_q9     22 24 19  qpnp555 
+  q_q10    1 25 24  qpnp555 
+  q_q8     21 23 19  qpnp555 
+  q_q7     1 2 23  qpnp555 
+  q_q12    21 22 1  qnpn555 
+  q_q13    22 22 1  qnpn555 
+  r_r1     20 8 1k 
+  r_r3     25 5 5k 
+  r_r4     1 25 5k 
+  q_q16    15 16 1  qnpn555 
+  q_q15    16 16 1  qnpn555 
+  q_q17    14 15 13  qnpn555 
+  q_q18    13 21 1  qnpn555 
+  q_q19    12 13 1  qnpn555 
+  q_q21    14 14 12  qnpn555 
+  r_r5     5 8 5k 
+  r_r6     14 9 7.5k 
+  r_r8     1 32 10k 
+  q_q22    9 9 8  qpnp555 
+  q_q22d   10 9 8  qpnp555 
+  q_q20    10 12 1  qnpn555 
+  r_r10    13 10 4.7k 
+  q_q23    11 10 26  qnpn555  .5
+  q_q26    3 29 1  qnpn555  .5
+  r_r11    27 26 100 
+  r_r12    1 26 3.3k 
+  r_r14    26 29 120 
+  r_r15    11 8 6.2k 
+  q_q27    8 11 28  qnpn555 
+  q_q28    8 28 3  qnpn555 
+  r_r16    3 28 3.9k 
+  q_q24    1 11 3  qpnp555 
+  q_q25    27 4 14  qpnp555 
+  q_q14    7 27 1  qnpn555
+  cslow1   15 0 40p
+  cslow2   16 0 40p 
+  cslow11  21 0 40p
+  cslow22  22 0 40p 
+.model qnpn555	npn(is=14.34f xti=3 eg=1.11 vaf=74.03 bf=65.62 ne=1.208
++		ise=19.48f ikf=20m xtb=1.5 br=9.715 nc=2 isc=0 ikr=0 rc=1
++		cjc=40p mjc=.3416 vjc=.75 fc=.5 cje=40p mje=.377 vje=.75
++		tr=58.98n tf=1n itf=.6 vtf=1.7 xtf=3 rb=10)
+.model qpnp555	pnp(is=650.6e-18 xti=3 eg=1.11 vaf=115.7 bf=70.35 ne=1.829
++		ise=180.5f ikf=20m xtb=1.5 br=4.146 nc=2 isc=0 ikr=0 rc=.715
++		cjc=40p mjc=.5383 vjc=.75 fc=.5 cje=40p mje=.3357 vje=.75
++		tr=119.9n tf=1n itf=.65 vtf=5 xtf=1.7 rb=10)
+.ends
+
+*|* BIPOLAR 555 TIMER CONNECTED IN ASTABLE OPERATION
+*|.LIB MISC.LIB
+*|.PARAM CVAL=20N
+*|VRST 4 0 PULSE(1 0 700U 1U 1U 400U 1) 
+*|C2 3 0 10P
+*|VCC 8 0 5
+*|RA 8 7 4700
+*|RB 7 6 2200
+*|C1 6 0 {CVAL}
+*|X1 0 6 3 4 5 6 7 8 555B
+*|CTRL 5 0 10P
+*|.IC V(6)=0
+*|.TRAN 10U 800U
+*|.PROBE
+*|.END
+

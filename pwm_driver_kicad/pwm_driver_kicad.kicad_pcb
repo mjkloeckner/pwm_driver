@@ -520,7 +520,7 @@
       (net 2 "0") (pinfunction "Pin_2") (pintype "passive") (tstamp 0dcbb737-63a5-4080-b226-7cff65a788dd))
     (pad "3" thru_hole oval (at 10 0 90) (size 1.98 3.96) (drill 1.32) (layers "*.Cu" "*.Mask")
       (net 5 "VCC") (pinfunction "Pin_1") (pintype "passive") (tstamp 3ce1cba0-897b-4e14-a72b-f5401867358f))
-    (model "/home/mk/dox/fiuba/86.70/driver_led_integrador/3d_models/screw-terminal-dg-301-5mm-1.snapshot.1/dg-301-5_0.step"
+    (model "${KIPRJMOD}/pwm_driver_3d_models/screw-terminal-dg-301-5mm-1.snapshot.1/dg-301-5_0.step"
       (offset (xyz -2.5 -3 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -890,7 +890,7 @@
       (net 8 "Net-(U1-THR)") (pinfunction "2") (pintype "passive") (tstamp 5875cbdf-503b-445c-910a-200c1b63616b))
     (pad "3" thru_hole circle (at 0 10 180) (size 3 3) (drill 1.2) (layers "*.Cu" "*.Mask")
       (net 3 "Net-(D1-K)") (pinfunction "3") (pintype "passive") (tstamp 783c001f-e061-4de8-aef3-5558165434e6))
-    (model "/home/mk/dox/fiuba/86.70/driver_led_integrador/3d_models/alpha-rv16af-20-1.snapshot.9/RV16AF-20.step"
+    (model "${KIPRJMOD}/pwm_driver_3d_models/alpha-rv16af-20-1.snapshot.9/RV16AF-20.step"
       (offset (xyz 7 -5 12.5))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 90))
