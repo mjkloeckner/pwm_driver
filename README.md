@@ -4,7 +4,7 @@
 
 This is a simple [Pulse-width
 Modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation) Driver that
-can drive LEDs or other DC loads up to at least `18v 3A`.
+can drive LEDs or other DC loads up to at least `18v 3A`. 
 
 ## Original Design
 
