@@ -22,7 +22,6 @@ This are some web resources that I consulted during the build
 - [Electronics enclosure for 3D printing // FreeCAD + KiCAD complete
   walkthrough](https://www.youtube.com/watch?v=ov3PpaP9uHI)
 
-## Original Design
+## License
 
-The original design is not mine, I found it and made a few tweaks to the values
-of the components in order to fit my needs.
+[MIT](https://opensource.org/licenses/MIT)
