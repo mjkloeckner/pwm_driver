@@ -1,6 +1,6 @@
 # Pulse-width Modulation Driver
 
-![driver_pwm_wide](https://raw.githubusercontent.com/mjkloeckner/files/main/driver_pwm_wide.png?token=GHSAT0AAAAAACM6RN766H7LP6QKL4ATSCZKZPDTD4A)
+![pwm_driver_pcb_image](https://github.com/mjkloeckner/driver_PWM/assets/64109770/73f584bb-5474-498c-a39f-cb8020b2aa48)
 
 This is a simple [Pulse-width
 Modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation) Driver that
