@@ -1883,6 +1883,24 @@
 		(uuid "10f2e07a-8ad3-461d-b72f-ffc6334f007b")
 	)
 	(junction
+		(at 171.45 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20e58c31-78b4-48b5-8172-f51eacf0573b")
+	)
+	(junction
+		(at 171.45 102.87)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "27c6ed27-802c-4be9-b05a-14cd34f661fc")
+	)
+	(junction
+		(at 168.91 102.87)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "4194304f-bb65-404b-ad8f-ddd45a857a03")
+	)
+	(junction
 		(at 148.59 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1897,20 +1915,14 @@
 	(junction
 		(at 160.02 119.38)
 		(diameter 0)
-		(color 0 0 0 0)
+		(color 0 0 0 1)
 		(uuid "865a81d2-5286-4ef9-8ca2-24df2843cbd6")
 	)
 	(junction
 		(at 133.35 119.38)
 		(diameter 0)
-		(color 0 0 0 0)
+		(color 0 0 0 1)
 		(uuid "8874a876-9631-494f-afe9-f9c60621aa04")
-	)
-	(junction
-		(at 168.91 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bf31d2cd-233c-4e68-8d81-2c158099d4ba")
 	)
 	(junction
 		(at 154.94 97.79)
@@ -1998,6 +2010,17 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 102.87) (xy 181.61 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "434f958a-ee19-4f0a-bb7a-610c9a8f295a")
+	)
+	(wire
+		(pts
 			(xy 160.02 85.09) (xy 160.02 86.36)
 		)
 		(stroke
@@ -2020,7 +2043,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 87.63) (xy 171.45 87.63)
+			(xy 181.61 87.63) (xy 171.45 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2030,7 +2053,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 87.63) (xy 177.8 90.17)
+			(xy 181.61 87.63) (xy 181.61 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2146,7 +2169,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 100.33) (xy 177.8 104.14)
+			(xy 181.61 100.33) (xy 181.61 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2167,7 +2190,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 95.25) (xy 170.18 95.25)
+			(xy 146.05 95.25) (xy 171.45 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2187,7 +2210,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 104.14) (xy 168.91 119.38)
+			(xy 168.91 102.87) (xy 168.91 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2224,8 +2247,19 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 0 1)
 		)
 		(uuid "b734d1d8-7e53-4996-9b04-bf4193205785")
+	)
+	(wire
+		(pts
+			(xy 171.45 95.25) (xy 173.99 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfa43c7b-756b-487f-9abb-e52768de0657")
 	)
 	(wire
 		(pts
@@ -2271,7 +2305,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 104.14) (xy 177.8 104.14)
+			(xy 168.91 102.87) (xy 171.45 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2292,7 +2326,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 83.82) (xy 168.91 104.14)
+			(xy 168.91 83.82) (xy 168.91 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2465,7 +2499,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "10dfd1bb-b2ba-4d00-b1da-843943832278")
 		(property "Reference" "B1"
@@ -2628,6 +2662,75 @@
 			(project "pwm_driver_kicad"
 				(path "/d8411f75-4ef2-4a30-b208-c451ecf749d1"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 171.45 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "595ffad3-d7ec-49e0-bc70-9585f503322a")
+		(property "Reference" "R1"
+			(at 173.482 98.298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 173.736 100.076 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 172.466 99.314 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 171.45 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eacd365a-423a-4d65-af43-bb6b6277eda5")
+		)
+		(pin "2"
+			(uuid "1db0d2a5-03cb-45a3-a36c-94238ab2d393")
+		)
+		(instances
+			(project "pwm_driver_kicad"
+				(path "/d8411f75-4ef2-4a30-b208-c451ecf749d1"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3111,7 +3214,7 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
-		(at 175.26 95.25 0)
+		(at 179.07 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3119,7 +3222,7 @@
 		(dnp no)
 		(uuid "d2dbb4a4-e5db-4706-9e4b-f1174a1d4ccf")
 		(property "Reference" "Q1"
-			(at 179.07 90.17 0)
+			(at 182.88 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3128,7 +3231,7 @@
 			)
 		)
 		(property "Value" "IRF1407"
-			(at 179.07 92.202 0)
+			(at 182.88 92.202 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3137,7 +3240,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 180.34 92.71 0)
+			(at 184.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3146,7 +3249,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf"
-			(at 175.26 107.95 0)
+			(at 179.07 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3155,7 +3258,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 175.26 95.25 0)
+			(at 179.07 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3164,7 +3267,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 175.26 112.395 0)
+			(at 179.07 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3173,7 +3276,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=1 2=2 3=3"
-			(at 175.26 110.49 0)
+			(at 179.07 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3182,7 +3285,7 @@
 			)
 		)
 		(property "Sim.Library" "${KIPRJMOD}/pwm_driver_spice_simulation_models/IRF1407.spi"
-			(at 175.26 95.25 0)
+			(at 179.07 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3191,7 +3294,7 @@
 			)
 		)
 		(property "Sim.Name" "irf1407"
-			(at 175.26 95.25 0)
+			(at 179.07 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3499,7 +3602,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "GND"
 			(at 98.552 107.442 0)
 			(effects
 				(font
