@@ -6,7 +6,7 @@ This is a simple [Pulse-width
 Modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation) Driver that
 can drive LED strips or other DC loads up to at least `18v 3A`. 
 
-## 3D Models
+## 3D Models used on the PCB
 
 The majority of 3D Models used are from the official KiCAD 3d library. The ones
 missing are:
@@ -14,6 +14,20 @@ missing are:
 - [16mm Alpha Potentiometer](https://grabcad.com/library/alpha-rv16af-20-1)
 - [Screw terminal DG-301 5mm](https://grabcad.com/library/screw-terminal-dg-301-5mm-1)
 - TO-220 with trimmed legs: A modification of the default KiCAD TO-220 model 
+
+## Case
+
+The case for the projects has been developed using FreeCAD.
+
+### Considerations
+
+- Fully parametric design: The majority of the values used in the design can be
+  easily changed by modifying the contents of the `param` spreadsheet
+- No threaded holes: Even tho FreeCAD offers an option to thread the holes,
+  considering that the screws used have a diameter that is less than `3.5 mm`
+  and the majority of 3D printers don't have that level of detail, I considered
+  not doing the thread on holes and doing it later with the physical screw at
+  the time of the build.
 
 ## Resources Consulted
 
