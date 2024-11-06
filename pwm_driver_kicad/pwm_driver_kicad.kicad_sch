@@ -2954,6 +2954,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "pwm_driver_spice_simulation_models/led.lib"
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "LED2"
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0a957eb0-a272-4a1c-b3b4-76803d37c575")
 		)
@@ -3117,7 +3135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "r=50k pos=0.75"
+		(property "Sim.Params" "r=50k pos=0.5"
 			(at 160.02 105.41 0)
 			(effects
 				(font
@@ -3408,7 +3426,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "330"
 			(at 191.516 82.296 0)
 			(effects
 				(font
