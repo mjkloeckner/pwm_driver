@@ -546,6 +546,175 @@
 				)
 			)
 		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R_Potentiometer_US"
 			(pin_names
 				(offset 1.016) hide)
@@ -1203,7 +1372,6 @@
 			)
 		)
 		(symbol "Simulation_SPICE:NMOS"
-			(pin_numbers hide)
 			(pin_names
 				(offset 0)
 			)
@@ -1901,6 +2069,12 @@
 		(uuid "4194304f-bb65-404b-ad8f-ddd45a857a03")
 	)
 	(junction
+		(at 181.61 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4da08cf2-4e32-4e54-8d6c-662d8d565532")
+	)
+	(junction
 		(at 148.59 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2169,6 +2343,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 76.2) (xy 189.23 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e16dbb9-0ddd-427e-b0ad-abbd245ca099")
+	)
+	(wire
+		(pts
 			(xy 181.61 100.33) (xy 181.61 102.87)
 		)
 		(stroke
@@ -2177,6 +2361,16 @@
 			(color 0 0 0 1)
 		)
 		(uuid "9a85fab8-eb4c-4479-9308-835ec6d8a4a2")
+	)
+	(wire
+		(pts
+			(xy 189.23 87.63) (xy 189.23 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ca5cf63-23db-4809-be94-d701f8c7cdaf")
 	)
 	(wire
 		(pts
@@ -2305,6 +2499,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 87.63) (xy 189.23 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf7c211f-3252-4e08-a50e-a720da778e96")
+	)
+	(wire
+		(pts
 			(xy 168.91 102.87) (xy 171.45 102.87)
 		)
 		(stroke
@@ -2355,6 +2559,16 @@
 			(type default)
 		)
 		(uuid "e0959afa-a9a8-42cd-96c5-f1104d23daf8")
+	)
+	(wire
+		(pts
+			(xy 189.23 66.04) (xy 189.23 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9dbb66a-9df3-47e4-b077-72d608bedf27")
 	)
 	(wire
 		(pts
@@ -2668,6 +2882,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 189.23 72.39 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2babbafc-465a-4e4e-be83-afbfaf52488d")
+		(property "Reference" "D3"
+			(at 191.77 69.5324 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LED"
+			(at 191.77 72.0724 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A 2=K"
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0a957eb0-a272-4a1c-b3b4-76803d37c575")
+		)
+		(pin "1"
+			(uuid "778aba1d-a8f8-44b4-8800-177e29813f05")
+		)
+		(instances
+			(project ""
+				(path "/d8411f75-4ef2-4a30-b208-c451ecf749d1"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 171.45 99.06 0)
 		(unit 1)
@@ -2815,7 +3117,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "r=50k pos=0.5"
+		(property "Sim.Params" "r=50k pos=0.75"
 			(at 160.02 105.41 0)
 			(effects
 				(font
@@ -2955,7 +3257,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "85723145-eb6e-48f6-add2-ee53a40845a5")
 		(property "Reference" "J1"
 			(at 174.244 77.47 90)
@@ -3090,6 +3391,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 189.23 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "bed5284a-8911-4193-8cd1-a65f16c94551")
+		(property "Reference" "R3"
+			(at 191.262 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220"
+			(at 191.516 82.296 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 190.246 81.534 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dfa066a3-c853-4038-97c7-d215d76d8517")
+		)
+		(pin "2"
+			(uuid "d32fdb73-2fee-4c78-8606-79c700e57abd")
+		)
+		(instances
+			(project "pwm_driver_kicad"
+				(path "/d8411f75-4ef2-4a30-b208-c451ecf749d1"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Timer:NE555P")
 		(at 133.35 105.41 0)
 		(unit 1)
@@ -3213,6 +3583,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 189.23 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce0c3a16-0f29-4f46-b792-5f072f1a0822")
+		(property "Reference" "#PWR04"
+			(at 189.23 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 189.23 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6cdbb2cc-cde5-4f2c-b649-645b0088edf0")
+		)
+		(instances
+			(project "pwm_driver_kicad"
+				(path "/d8411f75-4ef2-4a30-b208-c451ecf749d1"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
 		(at 179.07 95.25 0)
 		(unit 1)
@@ -3230,7 +3666,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRF1407"
+		(property "Value" "IRF540"
 			(at 182.88 92.202 0)
 			(effects
 				(font
@@ -3284,7 +3720,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "${KIPRJMOD}/pwm_driver_spice_simulation_models/IRF1407.spi"
+		(property "Sim.Library" "pwm_driver_spice_simulation_models/irf540.lib"
 			(at 179.07 95.25 0)
 			(effects
 				(font
@@ -3293,7 +3729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "irf1407"
+		(property "Sim.Name" "irf540"
 			(at 179.07 95.25 0)
 			(effects
 				(font
