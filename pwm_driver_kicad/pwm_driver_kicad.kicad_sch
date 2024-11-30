@@ -2560,7 +2560,7 @@
 		)
 		(uuid "fffa9b89-a732-4bfc-afae-b7eef017e7a5")
 	)
-	(text ".tran 10u 2m"
+	(text ".tran 10u 1m"
 		(exclude_from_sim no)
 		(at 149.86 124.46 0)
 		(effects
