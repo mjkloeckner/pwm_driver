@@ -2494,19 +2494,7 @@
 			(pintype "passive")
 			(uuid "3ce1cba0-897b-4e14-a72b-f5401867358f")
 		)
-		(model "${KIPRJMOD}/pwm_driver_3d_models/screw-terminal-dg-301-5mm-1.snapshot.1/dg-301-5_0.step"
-			(hide yes)
-			(offset
-				(xyz -2.5 -3 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-		(model "${KIPRJMOD}/pwm_driver_3d_models/terminal_block.step"
+		(model "${KIPRJMOD}/pwm_driver_3d_models/terminal-block/terminal-block.step"
 			(offset
 				(xyz 5 0 0)
 			)
@@ -4104,27 +4092,15 @@
 			(pintype "passive")
 			(uuid "783c001f-e061-4de8-aef3-5558165434e6")
 		)
-		(model "${KIPRJMOD}/pwm_driver_3d_models/alpha-rv16af-20-1.snapshot.9/RV16AF-20.step"
-			(hide yes)
+		(model "${KIPRJMOD}/pwm_driver_3d_models/potentiometer/potentiometer.step"
 			(offset
-				(xyz 7 -5 12.5)
+				(xyz -0.75 -5 12.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 90)
-			)
-		)
-		(model "${KIPRJMOD}/pwm_driver_3d_models/potenciometro_shrink.step"
-			(offset
-				(xyz -0.5 -5 12.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 0 90)
+				(xyz 90 180 -90)
 			)
 		)
 	)
