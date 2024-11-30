@@ -483,10 +483,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../pwm_driver_fabrication_files/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "driver_pwm_kicad.step",
+      "step": "driver_pwm_pcb.step",
       "svg": "",
       "vrml": ""
     },

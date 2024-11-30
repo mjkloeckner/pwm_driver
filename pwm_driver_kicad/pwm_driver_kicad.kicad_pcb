@@ -43,7 +43,7 @@
 		(allow_soldermask_bridges_in_footprints no)
 		(grid_origin 104.9865 80)
 		(pcbplotparams
-			(layerselection 0x0001020_fffffffe)
+			(layerselection 0x0001020_ffffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
@@ -77,7 +77,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "../../pwm_driver_print/pwm_driver_print_3/")
+			(outputdirectory "../pwm_driver_fabrication_files/")
 		)
 	)
 	(net 0 "")
@@ -1114,6 +1114,18 @@
 			(uuid "90565631-15c3-42d1-a327-4847d5ccced2")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.wrl"
+			(hide yes)
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/pwm_driver_3d_models/TO-220-3_Vertical_trimmed_legs.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2483,8 +2495,20 @@
 			(uuid "3ce1cba0-897b-4e14-a72b-f5401867358f")
 		)
 		(model "${KIPRJMOD}/pwm_driver_3d_models/screw-terminal-dg-301-5mm-1.snapshot.1/dg-301-5_0.step"
+			(hide yes)
 			(offset
 				(xyz -2.5 -3 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/pwm_driver_3d_models/terminal_block.step"
+			(offset
+				(xyz 5 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -4092,9 +4116,9 @@
 				(xyz -90 0 90)
 			)
 		)
-		(model "${KIPRJMOD}/pwm_driver_3d_models/potentiometer_propio.step"
+		(model "${KIPRJMOD}/pwm_driver_3d_models/potenciometro_shrink.step"
 			(offset
-				(xyz -0.5 -5 14)
+				(xyz -0.5 -5 12.25)
 			)
 			(scale
 				(xyz 1 1 1)
