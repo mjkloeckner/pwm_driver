@@ -41,7 +41,8 @@
 % ]{Inter}
 
 % change regular font to light font
-\setmainfont{Nimbus Sans}
+\setmainfont{Nimbus Sans L}
+% \setmainfont{Nimbus Sans}
 % \fontsize{14pt}{18pt}\selectfont % Cambia el tamaño y el interlineado
 
 \newfontfamily\titlefont{Inter}[
@@ -138,6 +139,11 @@ BoldFont        =   *-Bold,
 % Define custom label format for subfigures
 \DeclareCaptionLabelFormat{customsubfig}{\thefigure.#2.}
 \captionsetup[sub]{font=small,labelfont=md, labelformat=customsubfig}
+
+\usepackage[list=true,listformat=simple]{subcaption}
+\makeatletter
+\g@addto@macro\p@subfigure{.}
+\makeatother
 
 \renewcommand\thesubfigure{\arabic{subfigure}}
 
@@ -253,8 +259,8 @@ BoldFont        =   *-Bold,
 \usepackage{colortbl}
 
 % \usepackage[scaled]{helvet}
-\usepackage{helvet}
-\renewcommand\familydefault{\sfdefault} 
-\usepackage[T1]{fontenc}
+% \usepackage{helvet}
+% \renewcommand\familydefault{\sfdefault} 
+% \usepackage[T1]{fontenc}
 
 \renewcommand{\thefootnote}{[\arabic{footnote}]}
